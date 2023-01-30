@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muhamad Luthfy Noor</title>
+    <link rel="icon" type="image/png" href="images/alliance.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/scribbler-global.css" />
+    <link rel="stylesheet" href="css/scribbler-doc.css" />
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo">
+        Dokumentasi Ujian Akhir Semester<br /><span class="logo__thin">A-Frame</span>
+      </h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item">
+          <a
+            href="https://github.com/mochluthfix"
+            class="link link--dark"
+            target="_blank"
+            ><i class="fa fa-github"></i> Github</a
+          >
+        </li>
+        <li class="menu__item">
+          <a href="https://mochluthfix.github.io/" class="link link--dark"
+            ><i class="fa fa-home"></i> Home</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+      </aside>
+      <article class="doc__content">
+        <!-- A-Frame -->
+        <section class="js-section">
+          <h3 class="section__title">A-Frame</h3>
+          <p>
+            A-Frame adalah kerangka kerja web sumber terbuka yang di buat untuk
+            membangun pengalaman realitas virtual (VR). A-Frame dikelola oleh
+            pengembang dari Supermedium (Diego Marcos, Kevin Ngo) dan Google
+            (Don McCurdy). Kerangka kerja A-Frame mengunakan sistem komponen
+            entitas untuk Three.js di mana pengembang dapat membuat adegan 3D
+            dan WebVR menggunakan HTML. Saat ini A-Frame masih terus berkembang
+            untuk menjadi salah satu VR terbesar dalam dunia pengembangan VR.
+            <br /><br />
+            A-Frame mendukung sebagian besar headset VR seperti Vive, Rift,
+            Windows Mixed Reality, Daydream, GearVR, Cardboard, Oculus Go, dan
+            bahkan dapat digunakan untuk augmented kenyataan. Referensi lengkap
+            terkait A-Frame anda dapat mengunjungi situs resmi A-Frame
+            <a href="https://aframe.io/" class="link link--dark" target="_blank"
+              >link.
+            </a>
+          </p>
+
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code class="shell-session demo"><br></code><br>
+            </pre>
+          </div>
+        </section>
+    
+
+        <!-- Video 360 -->
+        <section class="js-section" style="padding-bottom: 85px">
+          <h3 class="section__title">a-videosphere 360</h3>
+          <h3 class="section__title__script">Html</h3>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                &lt;a-scene&gt;
+                
+                &lt;a-assets&gt;
+                    &lt;video id=&quot;sourceType:=&quot; src=&quot;sourceType&quot; autoplay&gt;
+                    &lt;/a-assets&gt;
+                    &lt;/a-scene&gt;
+                    
+                    &lt;a-videosphere&gt; src=&quot;sourceType&quot; rotation=&quot;&quot; &lt;a-videosphere&gt;
+                  &lt;/body&gt;
+              </code>
+            </pre>
+          </div>
+          <br />
+          <a href="tambang.html" class="button--primary" target="_blank"
+            >Jalankan</a
+          >&nbsp;
+        </section>
+
+        <!-- 3D Object -->
+        <section class="js-section" style="padding-bottom: 85px">
+          <h3 class="section__title">3D Object</h3>
+          <h3 class="section__title__script">Html</h3>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                &lt;a-scene&gt;
+                
+                &lt;a-box position=&quot;-1 0.5 -3&quot; rotation=&quot;0 45 0&quot; color=&quot;#ffff&quot;&gt;&lt;/a-box&gt;
+                    &lt;a-sphere position=&quot;0 1.25 -5&quot; radius=&quot;1.25&quot; color=&quot;#ffff&quot;&gt;&lt;/a-sphere&gt;
+                    &lt;a-cylinder position=&quot;0 1.25 -5&quot; radius=&quot;0.5&quot; height=&quot;1.5&quot; color=&quot;#ffff&quot;&gt;&lt;/a-cylinder&gt;
+                    &lt;a-plane position=&quot;0 0 -3&quot; rotation=&quot;90 0 0&quot; width=&quot;4&quot; height=&quot;4&quot; color=&quot;#ffff&quot;&gt;&lt;/a-plane&gt;
+                    &lt;/a-scene&gt;
+                    
+                  &lt;/body&gt;
+              </code>
+            </pre>
+          </div>
+          <br />
+          <a href="3dicon.html" class="button--primary" target="_blank"
+            >Jalankan</a
+          >&nbsp;
+        </section>
+
+        <!-- Panorama 360° -->
+        <section class="js-section" style="padding-bottom: 85px">
+          <h3 class="section__title">Panorama 360°</h3>
+          <h3 class="section__title__script">Html</h3>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                &lt;body&gt;
+                  &lt;a-scene&gt;
+                    &lt;a-sky src=&quot;images/gunung.jpg&quot; rotation=&quot;0 -130 0&quot;&gt;&lt;/a-sky&gt;
+              
+                    &lt;a-text
+                      font=&quot;arial&quot;
+                      value=&quot;Dari puncak gunung, 360&amp;deg; panorama&quot;
+                      width=&quot;6&quot;
+                      position=&quot;-2.5 0.25 -1.5&quot;
+                      rotation=&quot;0 15 0&quot;
+                    &gt;
+                    &lt;/a-text&gt;
+                    
+                  &lt;/a-scene&gt;
+                &lt;/body&gt;
+              </code>
+            </pre>
+          </div>
+          <br />
+          <a href="gunung.html" class="button--primary" target="_blank"
+            >gunung</a
+          >&nbsp;
+        </section>
+
+        <section class="js-section">
+          <h3 class="section__title">Notes</h3>
+          <h3 class="section__title__script">Notes 1</h3>
+          <p>
+            Dokumentasi dibuat untuk tugasbesar UAS kuliah<br />
+            Terima kasih😊
+          </p>
+          <h3 class="section__title__script">Notes 2</h3>
+          <p>
+            Package pack A-Frame dapat diunduh atau di instal melalui link resmi
+            atau unduh pada link berikut:
+          </p>
+          <table id="customers">
+            <tr>
+              <th>File</th>
+              <th>Value</th>
+              <th>Link</th>
+            </tr>
+            <tr>
+              <td>A-Frame & AR.Js</td>
+              <td>Official</td>
+              <td>
+                <a href="https://aframe.io/" target="_blank"> Donwload </a>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </article>
+    </div>
+
+    <footer class="footer">
+      Dibuat oleh Muhamad Luthfy Noor ©
+
+      <script type="text/javascript">
+        var creditsyear = new Date();
+        document.write(creditsyear.getFullYear());
+      </script>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <script src="js/scribbler.js"></script>
+  </body>
+</html>

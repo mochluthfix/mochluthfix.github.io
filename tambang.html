@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>Video 360°</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <!--Assets Management-->
+        <a-assets>
+            <video id="tambang" src="videos/tambang.mp4" autoplay loop="true"></video>
+        </a-assets>
+        <!--UI-->
+        <a-videosphere src="#tambang" rotation="0 -90 0"></a-videosphere>
+    </a-scene>
+</body>
+
+</html>
